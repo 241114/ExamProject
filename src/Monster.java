@@ -15,8 +15,8 @@ public abstract class Monster implements Creature {
     public int getHp() {
         return this.hp;
     }
-    public void setHp(int hp) {// 妥当性チェック
-        this.hp = hp;
+    public void setHp(int hp){
+        this.hp = Math.max(hp, 0);
     }
 
     public char getSuffix(){

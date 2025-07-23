@@ -4,8 +4,8 @@ public  class SuperHero extends Hero{
     }
 
     public void attack(Creature target){
-        setHp(getHp() - 10);
-        System.out.println(getName() + "は10ダメージ与えた");
+        target.setHp(target.getHp() - 25);
+        System.out.println(getName() + "は"+ target.getName() + "に25ダメージ与えた");
     }
 
 

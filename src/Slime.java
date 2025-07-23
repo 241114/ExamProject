@@ -4,7 +4,7 @@ public final class Slime extends Monster{
     }
 
     public void attack(Creature target){
-        setHp(getHp() - 10);
-        System.out.println("スライムの体当たり攻撃！" + getName() + "は10ダメージ与えた");
+        target.setHp(target.getHp() - 5);
+        System.out.println("スライムの体当たり攻撃！" + target.getName() + "に5ダメージ与えた！");
     }
 }
