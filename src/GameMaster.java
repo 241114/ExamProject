@@ -37,9 +37,7 @@ public class GameMaster {
         System.out.println("---味方の総攻撃---");
         for(Character c : party) {
             for(Monster m : monsters) {
-                System.out.println(m.getName()+m.getHp());
                 c.attack(m);
-                System.out.println(m.getName()+m.getHp());
             }
         }
         System.out.println("---敵の総攻撃---");
